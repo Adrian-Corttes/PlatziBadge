@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Badge from './components/badge';
 import 'bootstrap/dist/css/bootstrap.css'
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
