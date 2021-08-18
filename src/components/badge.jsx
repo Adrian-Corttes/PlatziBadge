@@ -1,9 +1,8 @@
 import React from 'react'
 import confLogo from '../img/badge-header.svg'
-import Gravatar from '../img/img-programador.png'
 import '../css/babge.css'
 
-const Badge = () => {
+const Badge = ({firsName,lastName,jopTitle,Twitter,avatar}) => {
    return (
       <div className="Badge">
          <div className="Badge__header">
@@ -11,13 +10,13 @@ const Badge = () => {
          </div>
 
          <div className="Badge__section-name">
-            <img src={Gravatar} className="Badge__avatar" alt="avatar"/>
-            <h1>Adrian <br/> Cortes</h1>
+            <img src={avatar} className="Badge__avatar" alt="avatar"/>
+            <h1>{firsName} <br/> {lastName}</h1>
          </div>
 
          <div className="Badge__section-info">
-            <p>Web Developer Full Stack</p>
-            <p>@Adrian_Corttes</p>
+            <h3>{jopTitle}</h3>
+            <div>@{Twitter}</div>
          </div>
 
          <div className="Badge__footer">
