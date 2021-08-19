@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import BadgeNew from './pages/badgeNew'
+import BadgeNew from './pages/badgeNew.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
