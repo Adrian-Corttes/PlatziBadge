@@ -7,7 +7,13 @@ import BabgeForm from '../components/BabgeForm'
 import '../pages/css/badgeNew.css'
 
 class BadgeNew extends React.Component{
-   state = {form: {}};
+   state = {form: {
+      firsName: '',
+      lastName: '',
+      email: '',
+      jopTitle: '',
+      twitter: '',
+   }};
 
    handleChange = e =>{
       this.setState({
@@ -31,10 +37,11 @@ class BadgeNew extends React.Component{
             <div className="row">
                <div className="col-6">
                   <Badge 
-                     firsName="Adrian"
-                     lastName="Cortes"
-                     jopTitle="Web Developer Full Stack"
-                     Twitter="Adrian_Corttes"
+                     firsName={this.state.form.firstName}
+                     lastName={this.state.form.lastName}
+                     jopTitle={this.state.form.jopTitle}
+                     Twitter={this.state.form.twitter}
+                     email={this.state.form.email}
                      avatar={Avatar}
                   />
                </div>

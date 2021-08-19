@@ -4,8 +4,6 @@ class BabgeForm extends React.Component{
    
    handleClick = (e)=>{
       e.preventDefault();
-      console.log('Click')
-      console.log(this.state)
    }
 
    render(){
