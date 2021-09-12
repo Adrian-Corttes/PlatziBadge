@@ -19,3 +19,4 @@ class BadgesList extends React.Component {
 }
 
 export default BadgesList;
+
